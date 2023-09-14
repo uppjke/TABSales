@@ -1,15 +1,16 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $billId = $_POST['billId'];
+    $productName = $_POST['productName'];
+    $amount = $_POST['amount'];
     $email = $_POST['email'];
 
-    // Проверьте статус оплаты с помощью API QIWI
+    // Здесь должен быть код для обработки платежа через платежный шлюз
 
     // Если оплата прошла успешно, отправьте почту
     $to = $email;
     $subject = "Подтверждение оплаты";
-    $message = "Спасибо за покупку табулатуры. Ваш счет: " . $billId;
+    $message = "Спасибо за покупку " . $productName . ". Файл с табулатурой будет отправлен вам на почту.";
 
     mail($to, $subject, $message);
 }
