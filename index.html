@@ -44,12 +44,12 @@
         <div id="paymentForm" style="display: none;">
             <h3>Оплата</h3>
             <form action="processPayment.php" method="post">
-                <input type="text" name="productName" readonly>
-                <input type="text" name="amount" readonly>
-                <input type="text" placeholder="Номер карты" required>
-                <input type="text" placeholder="MM/YY" required>
-                <input type="text" placeholder="CVC" required>
-                <input type="email" name="email" placeholder="Ваш email" required>
+                <input type="text" class="input-field" name="productName" readonly>
+                <input type="text" class="input-field" name="amount" readonly>
+                <input type="text" class="input-field" placeholder="Номер карты" required>
+                <input type="text" class="input-field" placeholder="MM/YY" required>
+                <input type="text" class="input-field" placeholder="CVC" required>
+                <input type="email" class="input-field" name="email" placeholder="Ваш email" required>
                 <button class="buy-button" type="submit">Оплатить</button>
             </form>
         </div>
