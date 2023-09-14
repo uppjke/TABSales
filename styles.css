@@ -26,3 +26,13 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
+#catalog {
+    padding: 1rem;
+}
+
+.product {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+}
