@@ -38,39 +38,39 @@ nav a {
 }
 
 .buy-button {
-    background-color: #4CAF50; /* Зеленый */
+    background-color: #4CAF50;
     border: none;
-    color: white; /* Белый текст */
-    padding: 10px 20px; /* Внутренние отступы */
-    text-align: center; /* Выравнивание текста по центру */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px; /* Внешние отступы */
-    cursor: pointer; /* Курсор в виде руки */
-    border-radius: 12px; /* Закругленные углы */
-    transition: background-color 0.3s; /* Плавный переход цвета */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
 .buy-button:hover {
-    background-color: #45a049; /* Чуть более темный зеленый при наведении */
+    background-color: #45a049;
 }
 
 /* Стили для полей ввода */
 .input-field {
-    padding: 10px 15px; /* Внутренние отступы */
-    margin-bottom: 10px; /* Внешний отступ снизу */
-    font-size: 16px; /* Размер шрифта */
-    border: 1px solid #ccc; /* Граница вокруг поля */
-    border-radius: 5px; /* Закругленные углы */
-    width: 100%; /* Ширина 100% от родительского контейнера */
-    box-sizing: border-box; /* Чтобы padding не добавлял дополнительную ширину */
-    transition: border-color 0.3s; /* Плавный переход цвета границы */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; 
+    box-sizing: border-box;
+    transition: border-color 0.3s;
 }
 
 .input-field:focus {
-    border-color: #4CAF50; /* Цвет границы при фокусе на поле */
-    outline: none; /* Убираем стандартный outline */
+    border-color: #4CAF50;
+    outline: none;
 }
 
 /* Стили для кнопки отправки */
@@ -79,7 +79,7 @@ nav a {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
