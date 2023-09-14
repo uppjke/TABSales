@@ -6,12 +6,10 @@ function showPaymentForm(productName, amount) {
     
     modal.style.display = 'block';
     
-    // Закрыть модальное окно при клике на кнопку "закрыть"
     modal.querySelector('.close').onclick = function() {
         modal.style.display = 'none';
     }
     
-    // Закрыть модальное окно при клике вне его области
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
