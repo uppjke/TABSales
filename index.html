@@ -41,20 +41,24 @@
             <button class="buy-button" onclick="showPaymentForm('Табулатура 2', 150)">Купить</button>
         </article>
 
-        <div id="paymentForm" style="display: none;">
-            <h3>Оплата</h3>
-            <form action="processPayment.php" method="post">
-                <input type="text" class="input-field" name="productName" readonly>
-                <input type="text" class="input-field" name="amount" readonly>
-                <input type="text" class="input-field" placeholder="Номер карты" required>
-                <input type="text" class="input-field" placeholder="MM/YY" required>
-                <input type="text" class="input-field" placeholder="CVC" required>
-                <input type="email" class="input-field" name="email" placeholder="Ваш email" required>
-                <button type="submit" class="submit-button">Оплатить</button>
-            </form>
-        </div>
     </section>
 </main>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Оплата</h3>
+        <form action="processPayment.php" method="post">
+            <input type="text" class="input-field" name="productName" readonly>
+            <input type="text" class="input-field" name="amount" readonly>
+            <input type="text" class="input-field" placeholder="Номер карты" required>
+            <input type="text" class="input-field" placeholder="MM/YY" required>
+            <input type="text" class="input-field" placeholder="CVC" required>
+            <input type="email" class="input-field" name="email" placeholder="Ваш email" required>
+            <button type="submit" class="submit-button">Оплатить</button>
+        </form>
+    </div>
+    </div>
+
 
     <footer>
         <p>&copy; 2023 Магазин гитарных табулатур</p>
