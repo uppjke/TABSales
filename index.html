@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин гитарных табулатур</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
-</head>
-
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Магазин гитарных табулатур</h1>
+      <h1>Магазин гитарных табулатур</h1>
     </header>
-
     <nav>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">О нас</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">О нас</a></li>
+      </ul>
     </nav>
-
     <main>
-    <section id="catalog">
+      <section id="catalog">
         <h2>Каталог табулатур</h2>
-        
         <article class="product">
-            <h3>Табулатура 1</h3>
-            <p>Описание табулатуры 1</p>
-            <p>Цена: 100 руб.</p>
-            <button class="buy-button" onclick="showPaymentForm('Табулатура 1', 100)">Купить</button>
+          <h3>Табулатура 1</h3>
+          <p>Описание табулатуры 1</p>
+          <p>Цена: 100 руб.</p>
+          <button class="buy-button" onclick="showPaymentForm('Табулатура 1', 100)">Купить</button>
         </article>
-        
         <article class="product">
-            <h3>Табулатура 2</h3>
-            <p>Описание табулатуры 2</p>
-            <p>Цена: 150 руб.</p>
-            <button class="buy-button" onclick="showPaymentForm('Табулатура 2', 150)">Купить</button>
+          <h3>Табулатура 2</h3>
+          <p>Описание табулатуры 2</p>
+          <p>Цена: 150 руб.</p>
+          <button class="buy-button" onclick="showPaymentForm('Табулатура 2', 150)">Купить</button>
         </article>
-
-    </section>
-</main>
+      </section>
+    </main>
     <div id="myModal" class="modal">
-    <div class="modal-content">
+      <div class="modal-content">
         <span class="close">&times;</span>
         <h3>Оплата</h3>
         <form action="processPayment.php" method="post">
-            <input type="text" class="input-field" name="productName" readonly>
-            <input type="text" class="input-field" name="amount" readonly>
-            <input type="text" class="input-field" placeholder="Номер карты" required>
-            <input type="text" class="input-field" placeholder="MM/YY" required>
-            <input type="text" class="input-field" placeholder="CVC" required>
-            <input type="email" class="input-field" name="email" placeholder="Ваш email" required>
-            <button type="submit" class="submit-button">Оплатить</button>
+          <input type="text" class="input-field" name="productName" readonly>
+          <input type="text" class="input-field" name="amount" readonly>
+          <input type="text" class="input-field" placeholder="Номер карты" required>
+          <input type="text" class="input-field" placeholder="MM/YY" required>
+          <input type="text" class="input-field" placeholder="CVC" required>
+          <input type="email" class="input-field" name="email" placeholder="Ваш email" required>
+          <button type="submit" class="submit-button">Оплатить</button>
         </form>
+      </div>
     </div>
-    </div>
-
-
     <footer>
-        <p>&copy; 2023 Магазин гитарных табулатур</p>
+      <p>&copy; 2023 Магазин гитарных табулатур</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
