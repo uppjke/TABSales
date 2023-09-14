@@ -56,3 +56,34 @@ nav a {
     background-color: #45a049; /* Чуть более темный зеленый при наведении */
 }
 
+/* Стили для полей ввода */
+.input-field {
+    padding: 10px 15px; /* Внутренние отступы */
+    margin-bottom: 10px; /* Внешний отступ снизу */
+    font-size: 16px; /* Размер шрифта */
+    border: 1px solid #ccc; /* Граница вокруг поля */
+    border-radius: 5px; /* Закругленные углы */
+    width: 100%; /* Ширина 100% от родительского контейнера */
+    box-sizing: border-box; /* Чтобы padding не добавлял дополнительную ширину */
+    transition: border-color 0.3s; /* Плавный переход цвета границы */
+}
+
+.input-field:focus {
+    border-color: #4CAF50; /* Цвет границы при фокусе на поле */
+    outline: none; /* Убираем стандартный outline */
+}
+
+/* Стили для кнопки отправки */
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
