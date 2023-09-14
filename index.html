@@ -30,17 +30,31 @@
         <article class="product">
             <h3>Табулатура 1</h3>
             <p>Описание табулатуры 1</p>
-            <button onclick="buy('Табулатура 1')">Купить за 100 руб.</button>
+            <p>Цена: 100 руб.</p>
+            <button onclick="showPaymentForm('Табулатура 1', 100)">Купить</button>
         </article>
         
         <article class="product">
             <h3>Табулатура 2</h3>
             <p>Описание табулатуры 2</p>
-            <button onclick="buy('Табулатура 2')">Купить за 150 руб.</button>
+            <p>Цена: 150 руб.</p>
+            <button onclick="showPaymentForm('Табулатура 2', 150)">Купить</button>
         </article>
-    </section>
-    </main>
 
+        <div id="paymentForm" style="display: none;">
+            <h3>Оплата</h3>
+            <form action="processPayment.php" method="post">
+                <input type="text" name="productName" readonly>
+                <input type="text" name="amount" readonly>
+                <input type="text" placeholder="Номер карты" required>
+                <input type="text" placeholder="MM/YY" required>
+                <input type="text" placeholder="CVC" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <button type="submit">Оплатить</button>
+            </form>
+        </div>
+    </section>
+</main>
 
     <footer>
         <p>&copy; 2023 Магазин гитарных табулатур</p>
